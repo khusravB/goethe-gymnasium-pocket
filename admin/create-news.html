@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Create News</title>
+</head>
+<body>
+    <h1>Create News</h1>
+    <form id="newsForm">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+    
+        <label for="created_at">Created At:</label><br>
+        <input type="datetime-local" id="created_at" name="created_at" required><br><br>
+    
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" required></textarea><br><br>
+    
+        <label for="image1">Image 1:</label><br>
+        <input type="file" id="image1" name="image1"><br><br>
+    
+        <label for="image2">Image 2:</label><br>
+        <input type="file" id="image2" name="image2"><br><br>
+    
+        <label for="image3">Image 3:</label><br>
+        <input type="file" id="image3" name="image3"><br><br>
+    
+        <label for="small_description">Small Description:</label><br>
+        <input type="text" id="small_description" name="small_description" required><br><br>
+    
+        <button type="submit">Create News</button>
+    </form>
+    
+    <p id="responseMessage"></p>
+    
+    <script type="module" src="create-news.js"></script>    
+</body>
+</html>
